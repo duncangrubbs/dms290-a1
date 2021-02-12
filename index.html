@@ -2,9 +2,12 @@
 
 <html>
   <head>
-    <title>Copenhagen</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bg.css">
+    <title>Copenhagen | Duncan Grubbs</title>
+
+    <link rel="stylesheet" href="./css/bg.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <script defer src="script.js"></script>
@@ -14,7 +17,7 @@
     <main class="bg-container">
     <nav class="nav">
       <div class="nav-left">
-        <h2 class="nav-title">Copenhagen</h2>
+        <h2 class="nav-title">Copenhagen 🇩🇰</h2>
       </div>
       <div class="nav-right">
         <a class="nav-link" href="#about">About</a>
@@ -24,18 +27,18 @@
       </div>
     </nav>
     
-    <section class="splash-bg">
-      <div class="splash-header">
+    <section class="jumbotron">
+      <div class="jumbo-header">
         <h1 class="title">Copenhagen</h1>
         <h2 class="subtitle">The world&apos;s happiest city.</h2>
       </div>
-      <div class="img-wrapper">
+      <div class="jumbo-images">
         <img
-          class="splash-img"
+          class="jumbo-image"
           src="./images/kirken.jpg"
         />
         <img
-          class="splash-img small"
+          class="jumbo-image jumbo-image--small"
           src="./images/copenhill.JPG"
         />
       </div>
@@ -62,13 +65,13 @@
         their own signal systems – giving the cyclists a lead of a couple of seconds to accelerate.
       </p>
       <div class="col-section">
-        <p class="section-text w-img">
+        <p class="section-text section-w-image">
           The Copenhagen S-Train, Copenhagen Metro and the regional train networks are used by about half of the city's passengers, the remainder using
           bus services. Nørreport Station near the city centre serves passengers travelling by main-line rail, S-train, regional train, metro and bus.
           Some 750,000 passengers make use of public transport facilities every day. Copenhagen Central Station is the hub of the DSB railway
           network serving Denmark and international destinations.
         </p>
-        <img class="river-img" src="./images/river.jpg" />
+        <div class="river-image-wrapper"><img class="river-img" src="./images/river.jpg" /></div>
       </div>
       <p class="section-text">
         The Copenhagen Metro expanded radically with the opening of the City Circle Line (M3) on September 29, 2019. The new line connects
@@ -104,11 +107,10 @@
         been built. Attacks by the Wends continued, and after the original fortress was eventually destroyed by the marauders, islanders replaced
         it with Copenhagen Castle.
       </p>
-
     </section>
     <section id="statistics" class="section">
       <h3 class="section-header">Statistics</h3>
-      <div class="stats">
+      <div class="stats-col-wrapper">
         <div class="cards-wrapper">
           <div class="stat-card">
             <p class="main-stat">#2</p>
@@ -123,18 +125,22 @@
             <p class="stat-desc">Population</p>
           </div>
         </div>
-        <img class="stats-img" src="./images/nyhavn.jpg" />
+        <div class="nyhavn-wrapper"><img class="stats-img" src="./images/nyhavn.jpg" /></div>
       </div>
     </section>
+
     <div class="scroll-up" onClick="scrollUp()">
       <svg class="scroll-up-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
       </svg>
     </div>
     
-    <section class="full-section">
+    <section class="book-trip-section">
       <div class="book-trip" onClick="bookTrip()">
-        Book your trip now!
+        Book your trip
+        <svg class="book-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
       </div>
     </section>
     
@@ -144,7 +150,6 @@
       <a class="footer-link" href="https://www.copcap.com/news/copenhagen-is-2nd-most-livable-city-in-europe#:~:text=Copenhagen%20is%20second%20most%20liveable,lifestyle%20in%20140%20cities%20worldwide.">Statistics</a>
       <a class="footer-link" href="https://unsplash.com/">Image Source</a>
       <a class="footer-link" href="https://www.ceicdata.com/en/denmark/esa-2010-gdp-per-capita-by-region-current-price/gdp-per-capita-capital-region-copenhagen-city">GDP Source</a>
-      
     </footer>
     </main>
   </body>

@@ -1,0 +1,35 @@
+@media only screen and (max-width: 800px) {
+  .jumbo-image--small {
+    display: none;
+  }
+  .jumbo-image {
+    width: 90vw;
+    height: auto;
+  }
+  .jumbo-header {
+    text-align: center;
+  }
+  .title {
+    min-width: 100%;
+    font-size: 80px;
+  }
+  .subtitle {
+    font-size: 42px;
+  }
+  .nyhavn-wrapper {
+    display: none;
+  }
+  .river-img {
+    margin: 0;
+    width: 100%;
+  }
+  .river-image-wrapper {
+    margin: 16px 0
+  }
+  .col-section {
+    flex-direction: column;
+  }
+  .jumbotron {
+    min-height: 80vh;
+  }
+}
